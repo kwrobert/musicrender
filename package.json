@@ -1,0 +1,30 @@
+{
+  "name": "musicrender",
+  "version": "1.0.0",
+  "description": "Render certain divs to musical notation using Vextab tools",
+  "main": "index.js",
+  "scripts": {
+    "install": "napa kwrobert/fretboard 0xfe/vexchords"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwrobert/musicrender.git"
+  },
+  "author": "Kyle Robertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwrobert/musicrender/issues"
+  },
+  "homepage": "https://github.com/kwrobert/musicrender#readme",
+  "dependencies": {
+    "acorn": "^5.3.0",
+    "paper": "^0.11.5",
+    "vexflow": "^1.2.84",
+    "vextab": "^2.0.13"
+  },
+  "devDependencies": {
+    "coffeeify": "^3.0.1",
+    "coffeescript": "^2.1.1",
+    "napa": "^3.0.0"
+  }
+}
