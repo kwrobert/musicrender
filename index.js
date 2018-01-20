@@ -2,7 +2,7 @@
 paper = require('paper');
 Fret = require("./node_modules/fretboard/src/fretboard.js");
 $ = require("jquery");
-_ = require("lodash");
+// _ = require("lodash");
 
 // VexTab = vextab.VexTab;
 // Artist = vextab.Artist;
