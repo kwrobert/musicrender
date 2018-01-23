@@ -19,7 +19,8 @@
   "dependencies": {
     "acorn": "^5.3.0",
     "jquery": "^3.3.1",
-    "paper": "^0.11.5"
+    "paper": "^0.11.5",
+    "raphael": "^2.2.7"
   },
   "devDependencies": {
     "coffeeify": "^3.0.1",
