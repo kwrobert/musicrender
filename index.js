@@ -46,6 +46,19 @@ function parseChord(str) {
 }
 
 // Get all div elements with class vex-tabdiv
+content_width = $("div#wikipage").width()
+console.log("Width: " + content_width)
+tabdivs = $("div.vex-tabdivinit");
+tabdivs.each(function( index ) {
+    console.log("Div: " + index);
+    console.log(this);
+    console.log("Contents: " + $( this ).text());
+    this.setAttribute("width", content_width)
+    this.className = "vex-tabdiv"
+    // div = new Vex.Flow.FretboardDiv($('div.vex-fretdiv'));
+});
+
+// Get all div elements with class vex-tabdiv
 fretdivs = $("div.vex-fretdiv");
 console.log(fretdivs);
 fretdivs.each(function( index ) {
