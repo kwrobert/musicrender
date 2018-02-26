@@ -40,6 +40,7 @@ function parseChord(str) {
         }
         else if (line.search('text') >= 0) {
             position_text = data[1]
+            console.log("Position text: " + position_text) 
         }
     }
     return [strings, position, bars, position_text]
@@ -93,6 +94,8 @@ chorddivs.each(function( index ) {
     console.log(position)
     console.log("Bars: ")
     console.log(bars)
+    console.log("Position Text: ")
+    console.log(position_text)
     if (position_text == '') {
         chord.setChord(strings, position, bars)
     } else {
