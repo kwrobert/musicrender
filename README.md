@@ -52,6 +52,8 @@ examples and documentation about each tool:
 
 Here are some examples of useage:
 
+**Tablature via vextab:**
+
 ```{.vextab}
 options space=20
 tabstave
@@ -63,6 +65,8 @@ notes :8 t12p7/4 s5s3/4 :8 3s:16:5-7/5 :h p5/4
 text :w, |#segno, ,|, :hd, , #tr
 ```
 
+**Fretboard diagram via fretboard:**
+
 ```{.vexfretboard}
 fretboard
 show frets=3,4,5 string=1
@@ -71,7 +75,7 @@ show fret=3 string=6 text=G
 show notes=10/1,10/2,9/3,9/4
 ```
 
-Chord example: 
+**Chord shape via vexchord:**
 
 ```{.vexchord}
 position 3
@@ -91,7 +95,7 @@ connected.
 So first, I had to modify a simple Haskell plugin for gitit that parses the
 codeblocks mentioned above and places their contents into HTML divs with
 special class names that are easy to identify. This plugin is located in 
-[this file](file:~/wiki/wikidata/plugins/Vextab.hs)
+[this file](./Vextab.hs)
 
 Once the contents were on the pages in the proper divs, I had to write some
 Javascript to take the mini language inside those divs and render them. This
