@@ -38,15 +38,15 @@ examples and documentation about each tool:
   so I have defined the mini language and it therefore wont be documented
   elsewhere. So there are three directives:
 
-  1) position: Which position/fret the chord shape starts from. It takes a
+  1) **position:** Which position/fret the chord shape starts from. It takes a
      single number as an argument. You can also specify text here if you want,
      it just gets placed to the left of the first fret in the chord diagram
-  2) bar: Specify a bar. It takes 3 numbers as arguments in the following order:
+  2) **bar:** Specify a bar for a bar chord. It takes 3 numbers as arguments in the following order:
      fromstring, tostring, fret. Fret is specified relative to position. 
-  3) string: At takes 2 numbers as arguments: string, fret. Fret is specified
+  3) **string**: Takes 2 numbers as arguments: string, fret. Fret is specified
      relative to position. One can specify an 'x' for the fret to indicate it
      should be muted
-  4) text: Specify some text to label the chord diagram. Currently doesn't seem
+  4) **text**: Specify some text to label the chord diagram. Currently doesn't seem
      to render properly
 
 
