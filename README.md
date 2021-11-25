@@ -107,12 +107,11 @@ For the tablature and notation, I just used the prewritten scripts in the
 [Vextab](https://github.com/0xfe/vextab) library. 
 
 Both my musicrender script and the Vextab scripts are included in script tags
-at the bottom of the page template
-[here](file:~/wiki/wikidata/templates/page.st). 
+at the bottom of the page template [here](./page.st). 
 
 I also added some CSS to make chord diagrams line up left to right at the same
 height instead of stacking on top of each other. That is simple and is located 
-[here](file:~/wiki/wikidata/static/css/vex.css)
+[here](./vex.css) and [here](./vextab.css).
 
 I also made tablature expand to the width of the content section in the wiki
 page. This required modifying the Haskell plugin to write out an "initial" div
