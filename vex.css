@@ -1,0 +1,6 @@
+/* Make chords align horizontally */
+div.vex-chorddiv{ display: inline-block; padding-top: 8px;}
+
+/* Make tabs take entire width */
+div.vex-tabdiv{ width: 680; }
+div.vex-canvas{ width: 680; }
