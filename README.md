@@ -28,7 +28,7 @@ markdown  [here](https://pandoc.org/MANUAL.html#verbatim-code-blocks)
 Inside the codeblocks, you would then use a mini-language that is specific to
 the thing you're trying to render. This mini language is what allows you
 specify chords, notes, etc. It gets parsed and rendered by some scripts behind
-the scenes (full functionality described in the next section. I will not
+the scenes (full functionality described in the next section). I will not
 document each mini language tool here, instead go to the links below for
 examples and documentation about each tool:
 
@@ -89,18 +89,21 @@ string 6 x
 ## How it Works
 
 This ended up requiring multiple pieces that were in themselves pretty simple,
-but required learning a lot of new stuff and got complicated in how they all
-connected. 
+but required learning a lot of new stuff and got sort of complicated in how
+they all connected. This is what I had to do get this working specifically in
+gitit, not all of this would be necessary to use these tools elsewhere.
 
 So first, I had to modify a simple Haskell plugin for gitit that parses the
-codeblocks mentioned above and places their contents into HTML divs with
+markdown codeblocks mentioned above and places their contents into HTML divs with
 special class names that are easy to identify. This plugin is located in 
-[this file](./Vextab.hs)
+[this file](./Vextab.hs). This piece could be replaced with any markdown parsing tool. 
 
 Once the contents were on the pages in the proper divs, I had to write some
 Javascript to take the mini language inside those divs and render them. This
-code is only used for the fretboard and chord divs, and is located at [this git repo](https://github.com/kwrobert/musicrender).
-All the javascript code depends on the [VexChord](https://github.com/0xfe/vexchords) and 
+code is only used for the fretboard and chord divs, and is located at [this git
+repo](https://github.com/kwrobert/musicrender). All the javascript code for
+rendering chord diagrams and fretboard diagrams depends on the
+[VexChord](https://github.com/0xfe/vexchords) and
 [VexFretboard](https://github.com/0xfe/fretboard) javascript libs.
 
 For the tablature and notation, I just used the prewritten scripts in the
